@@ -1,0 +1,32 @@
+.News{
+    width: 700px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 21px 39px -25px rgba(0,0,0,0.96);
+
+}
+
+.container-News{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.title{
+    font-size: 22px;
+    width: 100%;
+    color: #d90429;
+}
+.intro{
+    font-size: 18px;
+}
+.data{
+    display: flex;
+    gap: 10px;
+}
