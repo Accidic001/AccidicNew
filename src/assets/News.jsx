@@ -25,7 +25,7 @@ function News() {
       console.log(setnewsList);
     }
     catch (error){
-      ('there has been a problem with your fetch operation:',error.message);
+      console.error('there has been a problem with your fetch operation:',error.message);
     }
   }
   fetchData();

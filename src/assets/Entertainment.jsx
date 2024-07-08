@@ -19,7 +19,7 @@ useEffect(()=>{
       setnewsList(data.articles);
     }
     catch (error){
-      ('there has been a problem with your fetch operation:',error.message);
+      console.error('there has been a problem with your fetch operation:',error.message);
     }
   }
   fetchData();
