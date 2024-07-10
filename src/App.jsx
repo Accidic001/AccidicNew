@@ -8,6 +8,7 @@ import Technology from './assets/Technology'
 import Sport from './assets/Sport'
 import Science from './assets/Science'
 import Entertainment from './assets/Entertainment'
+import NewsLetter from './assets/NewsLetter'
 
 
 function App() {
@@ -17,11 +18,13 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/"  element={<News />} />
+        <Route path="/news"  element={<News />} />
         <Route path="/Bussiness"  element={<Bussiness />} />
         <Route path="/Technology"  element={<Technology />} />
         <Route path="/Sport"  element={<Sport />} />
         <Route path="/Science"  element={<Science />} />
         <Route path="/Entertainment"  element={<Entertainment />} />
+        <Route path="/newsletter"  element={<NewsLetter />} />
       </Routes>
     </div>
   )

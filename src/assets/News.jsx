@@ -16,7 +16,7 @@ function News() {
  useEffect(()=>{
   async function fetchData(){
     try{
-      const response= await fetch("https://newsapi.org/v2/top-headlines?country=ng&apiKey=694f717d201f4055af499662b4a459f0");
+      const response= await fetch("https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=ng&apikey=96fc3794223853b16bbdea657c3d1929");
       console.log("Response status:", response.status); // Log response status
       if (!response.ok) {
         throw new Error("Network response is not ok");
@@ -54,18 +54,16 @@ function News() {
         <NewsData 
         title={val.title}
         publishedAt={val.publishedAt}
-        src={val.urlToImage}
-        author={val.author}
-        source ={val.source.id}  
+        src={val.image}
+        author={val.source.name}
+        source ={val.source.url}  
         href={val.url}
         key={key}
         /> )
       })};
        
     </div>;
-    <div>
-    <NewsLetter />
-    </div>
+   
 
     </>
   );

@@ -28,6 +28,8 @@ function NavBar() {
                         <Nav.Link as={Link} to={"/Sport"}>Sport</Nav.Link>
                         <Nav.Link as={Link} to={"/Science"}>Science</Nav.Link>
                         <Nav.Link as={Link} to={"/Technology"}>Technology</Nav.Link>
+                        <Nav.Link as={Link} to={"/newsletter"}>NewsLetter</Nav.Link>
+                        
                     </Nav>
                 </Navbar.Collapse>
             </div>
