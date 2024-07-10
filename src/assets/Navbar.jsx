@@ -33,7 +33,7 @@ function NavBar() {
             </div>
             </Navbar>
             <div className="intro mt-5 pt-5">
-            <h1 className='text-center text-uppercase'style={{color:"#03045e"}}>wellcome to accidicNews....</h1>
+            <h1 className='text-center text-capitalize'style={{color:"#03045e", fontSize:"23px"}}>wellcome to accidic News....</h1>
             </div>
         </div>
         </>
