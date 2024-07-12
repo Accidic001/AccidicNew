@@ -9,18 +9,26 @@ import Sport from './Sport';
 import Science from './Science';
 import Technology from './Technology';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 
 function NavBar() {
+
+    const [expanded, setExpanded] = useState(false);
+
+    const handleNavClick = () => {
+      setExpanded(false);
+    };
+
   return (
     <>
         <div className='flex flex-column'>
             <Navbar expand="lg" className=" " fixed='top' style={{backgroundColor:'#006d77',
-             boxShadow:" 0px 21px 39px -15px rgba(0,0,0,0.96)", color:"#90e0ef"}}>
+             boxShadow:" 0px 21px 39px -15px rgba(0,0,0,0.96)", color:"#90e0ef"}} expanded={expanded}>
             <div className="container ">
                 <Navbar.Brand href="#home">accidic<span className='text-white'>NEWS</span></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
+            <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto text-white" >
                         <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
                         <Nav.Link as={Link} to={"/Bussiness"}>Bussiness</Nav.Link>

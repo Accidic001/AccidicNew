@@ -8,7 +8,10 @@ function NewsLetter() {
         <h2>Always in touch with Accidic news for your daily news</h2>
       <div className="form d-flex" id=''>
         <input type="email"  placeholder='enter your email here....'/>
-        <button id='submit'>send</button>
+      <a href="Entertainment" rel='noopener noreferrer' target='_blank' className='btn button'>
+      send
+      </a>
+      {/* <button>send</button> */}
       </div>
     </div>
   )

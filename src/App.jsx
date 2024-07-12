@@ -18,7 +18,6 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/"  element={<News />} />
-        <Route path="/news"  element={<News />} />
         <Route path="/Bussiness"  element={<Bussiness />} />
         <Route path="/Technology"  element={<Technology />} />
         <Route path="/Sport"  element={<Sport />} />

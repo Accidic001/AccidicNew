@@ -17,6 +17,18 @@ useEffect(()=>{
       }
       const data = await response.json();
       console.log("Data:", data); // Log data returned
+      
+            // Restructure the data if necessary
+            const transformedData = data.articles.map(article => ({
+              title: article.title,
+              publishedAt: article.publishedAt,
+              src: article.urlToImage,
+              author: article.author,
+              source: article.source.id
+          }));
+          console.log("Transformed data:", transformedData); // Log the transformed data
+
+          setNewsList(transformedData);
       setNewsList(data.articles);
     } catch (error) {
       console.error(
