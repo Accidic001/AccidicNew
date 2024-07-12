@@ -31,7 +31,7 @@ function News() {
               author: article.author,
               source: article.source.id
           }));
-          console.log("Transformed data:", transformedData); // Log the transformed data
+          // console.log("Transformed data:", transformedData); // Log the transformed data
 
           setNewsList(transformedData);
       setNewsList(data.articles);

@@ -29,7 +29,7 @@ function NavBar() {
                 <Navbar.Brand href="#home">accidic<span className='text-white'>NEWS</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
             <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto text-white" >
+                    <Nav className="me-auto text-white" onClick={handleNavClick}>
                         <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
                         <Nav.Link as={Link} to={"/Bussiness"}>Bussiness</Nav.Link>
                         <Nav.Link as={Link} to={"/Entertainment"}>Entertaiment</Nav.Link>
