@@ -1,5 +1,5 @@
 .News{
-    width: 700px;
+    width: 90%;
     border: 1px solid #333;
     border-radius: 15px;
     margin: 50px;
@@ -30,3 +30,14 @@
     display: flex;
     gap: 10px;
 }
+
+/* img-container{
+
+    height:auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+} */
+/* .img-container img{
+
+} */

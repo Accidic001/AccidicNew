@@ -11,6 +11,7 @@
 h2{
     font-size: 20px;
     margin-top: 2px;
+    padding: 10px;
 
 }
 h1{
@@ -18,6 +19,7 @@ h1{
     font-weight: bold;
     margin-bottom: 30px;
     font-weight: 900;
+    padding: 10px;
 
 }
 .form{
@@ -25,7 +27,7 @@ h1{
     place-items: center;
     align-items: center;
     justify-content: space-between;
-    min-width: 30rem;
+    min-width: 80%;
     min-height: 2rem;
      border: wheat;
      overflow: hidden;
