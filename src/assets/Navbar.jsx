@@ -23,8 +23,8 @@ function NavBar() {
   return (
     <>
         <div className='flex flex-column'>
-            <Navbar expand="lg" className=" " fixed='top' style={{backgroundColor:'#006d77',
-             boxShadow:" 0px 21px 39px -15px rgba(0,0,0,0.96)", color:"#90e0ef"}} expanded={expanded}>
+            <Navbar expand="lg" className=" " fixed='top' style={{backgroundColor:'#888',
+             boxShadow:"  2px 9px -5px rgba(0,0,0,0.96)", color:"inherit"}} expanded={expanded}>
             <div className="container ">
                 <Navbar.Brand href="#home">accidic<span className='text-white'>NEWS</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
@@ -42,8 +42,8 @@ function NavBar() {
                 </Navbar.Collapse>
             </div>
             </Navbar>
-            <div className="intro mt-5 pt-5">
-            <h1 className='text-center text-capitalize'style={{color:"#03045e", fontSize:"23px"}}>wellcome to accidic News....</h1>
+            <div className="intro mt-5 ">
+            <h1 className='text-center text-uppercase pt-5'style={{color:"#03045e", fontSize:"23px"}}>wellcome to accidic News....</h1>
             </div>
         </div>
         </>

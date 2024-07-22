@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import {Route, BrowserRouter, Routes} from "react-router-dom"
+import React from 'react'
+import {Route, Routes} from "react-router-dom"
 import NavBar from './assets/Navbar'
 import './App.css'
 import News from './assets/News'
@@ -9,6 +9,7 @@ import Sport from './assets/Sport'
 import Science from './assets/Science'
 import Entertainment from './assets/Entertainment'
 import NewsLetter from './assets/NewsLetter'
+import Footer from './assets/Footer'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Entertainment"  element={<Entertainment />} />
         <Route path="/newsletter"  element={<NewsLetter />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

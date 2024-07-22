@@ -59,6 +59,7 @@ useEffect(()=>{
           <NewsData 
           title={val.title}
         publishedAt={val.publishedAt}
+        content={val.content}
         src={val.urlToImage}
         author={val.author}
         source ={val.source.id}  

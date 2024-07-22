@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
 import './News.css'
-import {  } from 'react-router-dom';
 import NewsData from './NewsData';
 
 function Technology() {

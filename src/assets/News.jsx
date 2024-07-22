@@ -58,12 +58,13 @@ function News() {
   return (
     <>
 
-    <div className='container-News container-fluid  m-2'>
+    <div className='container-News container-fluid mb-2'>
         <h2 className=' intro ' style={{color:"#283618"}}>Top 20 hottest News</h2>
       {newsList.map((val, key) => {
         return(
         <NewsData 
         title={val.title}
+        content={val.content}
         publishedAt={val.publishedAt}
         src={val.image}
         author={val.source.name}

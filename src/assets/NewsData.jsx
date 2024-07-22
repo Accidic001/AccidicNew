@@ -7,13 +7,15 @@ function NewsData(val, key) {
       <div className='News container-fluid'>
             <h3 className=' text-center title pt-4'>{val.title}</h3>
             <div className="img-container">
-            <img src={val.image} alt="url"  />
+            <img src={val.image} alt="image not available"  />
             </div>
-            
-            <button className='btn btn-primary' href= {val.url} rel='noopener' target='_blank'  > read more...</button>
+            <p className="content">{val.content}</p>
+            <Link to= {val.source} rel='noopener' target='_blank'  >
+            <button className='btn p-2 btn-secondary'  >read more</button>
+            </Link>
             <div className="data mt-3">
              <p>Author : {val.source.name}</p>
-            <p className='text-danger'>source : {val.source.url}</p>
+            <p>source : {val.image}</p>
             <p>{val.publishedAt}</p>
             </div>
             </div>
